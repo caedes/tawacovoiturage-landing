@@ -10,9 +10,11 @@ class LandingPad < Sinatra::Base
   set :public_folder, 'public'
 
   configure do
+    raise 'Admin credentials not yet set.' unless ENV['ADMIN_CREDENTIALS']
+
     # Admin settings - used to access contacts
-    $admin_acct_name = 'admin'
-    $admin_acct_passwd = 'admin'
+    $admin_acct_name = ENV['ADMIN_CREDENTIALS'].split(':').first
+    $admin_acct_passwd = ENV['ADMIN_CREDENTIALS'].split(':').last
 
     # Page settings - used to configure your landing page
     $page_title = 'LandingPad.rb | Just add water landing pages'
