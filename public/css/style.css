@@ -5,7 +5,7 @@
   width: 960px;
 }
 
-h1 { 
+h1 {
   font-size: 65px;
   margin-bottom: 5px;
   margin-top: 10px;
@@ -32,6 +32,7 @@ h4 {
 body {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 a {
@@ -134,6 +135,10 @@ a {
 
 .even {
   background-color:#fbfcf3;
+}
+
+table {
+  color: #333;
 }
 
 .table-name {
