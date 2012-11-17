@@ -84,6 +84,7 @@ class LandingPad < Sinatra::Base
       name: contact,
       type: contact_type,
       referer: request.referer,
+      created_at: Time.now
     }
 
     $collection.insert(doc)
