@@ -1,5 +1,5 @@
 var _gaq = _gaq || []
-_gaq.push(['_setAccount', google_analytics_key])
+_gaq.push(['_setAccount', 'UA-XXXXXX-X'])
 _gaq.push(['_trackPageview'])
 
 (function() {

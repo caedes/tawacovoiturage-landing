@@ -20,6 +20,5 @@
             %button{id: 'sign_up'}= 'Sign up'
         %h4= 'Powered by <a href="http://heroku.com/">Heroku</a> and <a href="http://mongohq.com">MongoHQ</a>'
 
-    %script{type: 'text/javascript'}
-      = "var google_analytics_key = '#{$google_analytics_key}'"
-    %script{type: 'text/javascript', src: 'javascripts/analytics.js'}
+    - if ENV['RAKE_ENV'] == 'production'
+      %script{type: 'text/javascript', src: 'javascripts/analytics.js'}

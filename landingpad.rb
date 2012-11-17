@@ -21,8 +21,6 @@ class LandingPad < Sinatra::Base
     $app_title = 'LandingPad.rb'
     $app_summary = 'Get a page up and running in minutes and
                     start collecting contacts immediately!'
-    #your google analyics tracking key, if applicable
-    $google_analytics_key = 'UA-XXXXXX-X'
 
     $bg_color = '#2B2F3D'
     $app_title_color = '#FFFFFF'
