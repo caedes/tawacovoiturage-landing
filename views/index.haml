@@ -1,18 +1,18 @@
 !!! 5
 %html
   %head
-    %title= $page_title
-    %link{rel: 'stylesheet', type: 'text/css', media: 'screen', href: "http://fonts.googleapis.com/css?family=#{$app_title_font}"}
+    %title= 'LandingPad.rb | Just add water landing pages'
+    %link{rel: 'stylesheet', type: 'text/css', media: 'screen', href: "http://fonts.googleapis.com/css?family=Philosopher"}
     %link{rel: 'stylesheet', type: 'text/css', media: 'screen', href: "css/style.css"}
     %script{type: 'text/javascript', src: 'javascripts/jquery-1.4.4.min.js'}
     %script{type: 'text/javascript', src: 'javascripts/jquery-ui-1.8.9.custom.min.js'}
     %script{type: 'text/javascript', src: 'javascripts/app.js'}
 
-  %body{style: "background-color:#{$bg_color};"}
+  %body{style: "background-color:#2B2F3D;"}
     #container
-      %h1{style: "color:#{$app_title_color}; font-family:#{$app_title_font},serif"}= $app_title
+      %h1{style: "color:white; font-family:Philosopher,serif"}= 'LandingPad.rb'
       .box
-        %h2= $app_summary
+        %h2= 'Get a page up and running in minutes and start collecting contacts immediately!'
         %h3= "Enter your email or Twitter and we'll tell you when it's ready"
         #form_div
           %form{id: 'subscribe', novalidate: ''}

@@ -16,17 +16,6 @@ class LandingPad < Sinatra::Base
     $admin_acct_name = ENV['ADMIN_CREDENTIALS'].split(':').first
     $admin_acct_passwd = ENV['ADMIN_CREDENTIALS'].split(':').last
 
-    # Page settings - used to configure your landing page
-    $page_title = 'LandingPad.rb | Just add water landing pages'
-    $app_title = 'LandingPad.rb'
-    $app_summary = 'Get a page up and running in minutes and
-                    start collecting contacts immediately!'
-
-    $bg_color = '#2B2F3D'
-    $app_title_color = '#FFFFFF'
-    #see http://code.google.com/webfonts for available fonts
-    $app_title_font = 'Philosopher'
-
     # Database settings - do NOT change these
     if ENV['MONGOHQ_URL']
       uri = URI.parse ENV['MONGOHQ_URL']

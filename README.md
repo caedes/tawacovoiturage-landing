@@ -4,6 +4,10 @@
 
 ## Development
 
+### Fonts
+
+http://code.google.com/webfonts
+
 ### Credentials
 
 `export ADMIN_CREDENTIALS='###:###'
