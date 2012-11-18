@@ -2,7 +2,7 @@
 %html
   %head
     %title= 'LandingPad.rb | Just add water landing pages'
-    %link{rel: 'stylesheet', type: 'text/css', media: 'screen', href: "http://fonts.googleapis.com/css?family=Philosopher"}
+    %link{rel: 'stylesheet', type: 'text/css', media: 'screen', href: "http://fonts.googleapis.com/css?family=Montserrat"}
     %link{rel: 'stylesheet', type: 'text/css', media: 'screen', href: "css/style.css"}
     %script{type: 'text/javascript', src: 'javascripts/jquery-1.4.4.min.js'}
     %script{type: 'text/javascript', src: 'javascripts/jquery-ui-1.8.9.custom.min.js'}
@@ -10,15 +10,16 @@
 
   %body{style: "background-color:#2B2F3D;"}
     #container
-      %h1{style: "color:white; font-family:Philosopher,serif"}= 'LandingPad.rb'
+      %h1{style: "color:white; font-family:Montserrat,serif; font-size:54px"}= 'tawacovoiturage'
       .box
-        %h2= 'Get a page up and running in minutes and start collecting contacts immediately!'
-        %h3= "Enter your email or Twitter and we'll tell you when it's ready"
+        %h2= 'Parce que le chemin importe  autant que la destination   nous pensons que la fête  doit débuter avec le voyage.'
+        %h3= "Tawacvoiturage, l'intermédiaire du covoiturage social et festif"
+        %h3= "Saisir votre email ou votre Twitter, pour être tenu au courant du lancement de tawacovoiturage.fr !"
         #form_div
           %form{id: 'subscribe', novalidate: ''}
             %input.entry{type: 'email', name: 'contact'}
-            %button{id: 'sign_up'}= 'Sign up'
-        %h4= 'Powered by <a href="http://heroku.com/">Heroku</a> and <a href="http://mongohq.com">MongoHQ</a>'
+            %button{id: 'sign_up'}= "S'inscrire"
+        %h4= ''
 
     - if ENV['RAKE_ENV'] == 'production'
       %script{type: 'text/javascript', src: 'javascripts/analytics.js'}

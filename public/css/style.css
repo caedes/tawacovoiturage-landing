@@ -1,7 +1,7 @@
 #container {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 150px;
   width: 960px;
 }
 
@@ -23,6 +23,11 @@ h3 {
   color: #CCCCCC;
   font-family: Georgia, serif;
   font-weight: normal;
+  margin: 10px 0 0 0;
+}
+
+h3:last-of-type {
+  margin: 10px 0 15px 0;
 }
 
 h4 {
@@ -33,6 +38,8 @@ body {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 50px;
+  background: url(../images/festival.jpg) center top no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -43,7 +50,7 @@ a {
 .box {
   color: white;
   width: 480px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, .7);
   margin: 5px auto 0px;
   padding: 15px;
   border-radius: 10px;
